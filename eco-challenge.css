@@ -1,0 +1,49 @@
+/* ECO CHALLENGE */
+.eco-section{background:var(--deep);color:#fff}.eco-section h2 em{color:var(--green)}.eco-section .section-kicker{color:var(--green)}
+.eco-lead{max-width:640px;font-size:13px;line-height:2;color:#b9cfc2;margin:18px 0 32px}
+.eco-status{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--deep2);border:1px solid #ffffff1a;padding:20px 24px}
+.eco-status>div:first-child{display:grid;gap:6px}.eco-status small{font-size:10px;letter-spacing:.08em;color:#9fb8aa}
+.eco-clock{text-align:right}.eco-clock b{display:block;font:700 30px/1.2 var(--sans);color:var(--green);font-variant-numeric:tabular-nums}
+.eco-badge{justify-self:start;font-size:9px;font-weight:700;letter-spacing:.12em;padding:5px 9px;background:#ffffff1f}.eco-badge.running{background:var(--green);color:var(--deep)}.eco-badge.paused{background:#f8edcf;color:#856a2b}
+.eco-tabs{display:flex;gap:4px;flex-wrap:wrap;margin:22px 0 0}.eco-tabs button{background:transparent;color:#b9cfc2;border:1px solid #ffffff22;padding:11px 16px;font:700 11px var(--sans);cursor:pointer}.eco-tabs button.on{background:var(--green);color:var(--deep);border-color:var(--green)}
+.eco-pane{padding:24px 0}.eco-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.eco-card,.eco-row{background:#f8faf6;color:var(--ink);padding:24px;margin-bottom:14px;display:grid;gap:12px;align-content:start}
+.eco-card h3{margin:0;font-size:22px;letter-spacing:-.03em}.eco-card p,.eco-row p{margin:0;font-size:13px;line-height:1.8;color:#5e7064}.eco-card small,.eco-row small{font-size:10px;letter-spacing:.08em;color:#4e966b}
+.eco-card input,.eco-card select,.eco-card textarea,.eco-row input{width:100%;padding:12px;border:1px solid #cfdacb;background:#fff;font:13px var(--sans);color:var(--ink)}
+.eco-card .button:disabled,.eco-btns .button:disabled{opacity:.45;cursor:not-allowed}
+.eco-opts{display:grid;gap:10px}.eco-opts button{text-align:left;padding:14px;border:1px solid #cfdacb;background:#fff;font:600 13px var(--sans);color:var(--ink);cursor:pointer}.eco-opts button:hover:not(:disabled){border-color:#4e966b}.eco-opts .right{background:#d9f5c0;border-color:#4e966b}.eco-opts .wrong{background:#fbdcd6;border-color:#c4584a}
+.eco-ex{font-weight:600}.eco-me{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px;font-size:13px;color:#d6e6dc}.eco-link{background:none;border:0;color:var(--green);cursor:pointer;text-decoration:underline;font:12px var(--sans)}
+.eco-note{font-size:12px;line-height:1.8;color:#9fb8aa}.eco-h{margin:26px 0 12px;font-size:14px;letter-spacing:.04em;color:var(--green)}
+.eco-row .st{font-size:9px;font-weight:700;padding:4px 8px;background:#f8edcf;color:#856a2b;margin-left:8px}.eco-row .st.approved{background:#d9f5c0;color:#2f6b3f}.eco-row .st.rejected,.eco-row .st.revoked{background:#fbdcd6;color:#a23b2e}
+.eco-imgs{display:flex;gap:8px;flex-wrap:wrap}.eco-imgs img{height:84px;border:1px solid #cfdacb}.eco-btns{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0}.eco-btns .button{flex:0 1 auto}
+.eco-btns .button-outline,.eco-card .button-outline{color:inherit;border-color:#8aa393}.eco-pane>.eco-btns .button-outline{color:#fff}.eco-chk{display:flex;align-items:center;gap:10px;font-size:12px}.eco-chk input{width:auto}
+.eco-prizes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:22px}.eco-prizes div{background:var(--deep2);border:1px solid #ffffff1a;padding:18px;display:grid;gap:6px}.eco-prizes small{color:var(--green);font-size:10px;letter-spacing:.06em}.eco-prizes span{font-size:12px;color:#9fb8aa}
+.eco-table{width:100%;border-collapse:collapse;font-size:12px;background:var(--deep2)}.eco-table th,.eco-table td{padding:11px 12px;text-align:left;border-bottom:1px solid #ffffff14}.eco-table th{color:var(--green);font-size:10px;letter-spacing:.08em}
+.eco-treebox{display:grid;grid-template-columns:minmax(260px,1fr) minmax(280px,1fr);gap:18px;align-items:start}@media(max-width:760px){.eco-treebox{grid-template-columns:1fr}}
+.eco-scene{width:100%;background:linear-gradient(#cfeaf5,#eaf6e4);border:1px solid #ffffff1a}.eco-scene .sway{transform-origin:160px 190px;animation:ecosway 4s ease-in-out infinite}.eco-scene .chr{animation:ecobob 2.4s ease-in-out infinite}
+.eco-scene .can{transform-origin:70px 160px}.eco-scene.pour .can{animation:ecotilt 1.8s ease-in-out}.eco-scene .drop{animation:ecofall .9s ease-in infinite}
+@keyframes ecosway{50%{transform:rotate(1.6deg)}}@keyframes ecobob{50%{transform:translateY(-2px)}}@keyframes ecotilt{30%,80%{transform:rotate(22deg)}}@keyframes ecofall{from{transform:translate(0,0);opacity:1}to{transform:translate(22px,40px);opacity:0}}
+.eco-bar{height:10px;background:#dfe7dc}.eco-bar i{display:block;height:100%;background:#4e966b;transition:width .5s}
+/* animation game */
+.eco-stage{position:relative}.eco-fx{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.pop{position:absolute;left:50%;white-space:nowrap;font:800 17px var(--sans);padding:4px 11px;border-radius:20px;background:#fff;box-shadow:0 4px 14px #0003;opacity:0;animation:ecopop 1.9s ease-out forwards}
+.pop.neg{color:#c4584a}.pop.item{color:#2f6b3f}.pop.grow{color:#2f7d46}.pop.gold{color:#9a6b00;background:#fff3c4}.pop.big{font-size:28px;color:#7a5200;background:#ffe27a}
+.eco-banner{position:absolute;left:50%;top:8%;white-space:nowrap;background:var(--green);color:var(--deep);font:800 12px var(--sans);padding:9px 15px;box-shadow:0 6px 20px #0003;opacity:0;animation:ecoban 2.8s .3s ease-out forwards}
+.eco-scene .sun{transform-origin:212px 28px;animation:ecosun 3s ease-in-out infinite}.eco-scene .cloud{animation:ecocloud 16s ease-in-out infinite alternate}
+.eco-scene .sway.grow{animation:ecosway 4s ease-in-out infinite,ecogrow 1.3s ease-out}.eco-scene .sway.regrow{animation:ecosway 4s ease-in-out infinite,ecogrow 1.8s ease-out}
+.eco-scene .chr.cheer{animation:ecocheer .5s ease-in-out 4}.eco-scene .rip{transform-box:fill-box;transform-origin:center;opacity:0;animation:ecoripple 1s ease-out infinite}
+.eco-scene .spk{animation:ecospk 1.5s ease-out both}.eco-scene .ring{animation:ecoring 1.2s ease-out both}.eco-scene .flyf{animation:ecofly 1.6s ease-in both}
+.eco-scene .fruit{transform-box:fill-box;transform-origin:center;animation:ecobounce 1.4s ease-in-out infinite}.eco-scene .aura{opacity:.35;animation:ecoaura 1.8s ease-in-out infinite}
+.eco-bar i{width:var(--t);transition:none}.eco-bar i.anim{animation:ecobar 1.2s ease-out}.eco-card h3.lvl{animation:ecolvl 1s ease-out}.eco-card b.bump{display:inline-block;animation:ecobump .7s ease-out}
+.button.pulse:not(:disabled){animation:ecopulse 1s ease-in-out infinite}
+@keyframes ecopop{0%{opacity:0;transform:translate(-50%,10px) scale(.6)}15%{opacity:1;transform:translate(-50%,0) scale(1.15)}70%{opacity:1}100%{opacity:0;transform:translate(-50%,-64px)}}
+@keyframes ecoban{0%{opacity:0;transform:translate(-50%,-14px) scale(.7)}12%{opacity:1;transform:translate(-50%,0) scale(1.1)}20%{transform:translate(-50%,0) scale(1)}85%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,0)}}
+@keyframes ecogrow{0%{transform:scale(.86)}45%{transform:scale(1.1)}70%{transform:scale(.97)}100%{transform:scale(1)}}
+@keyframes ecocheer{50%{transform:translateY(-14px)}}@keyframes ecoripple{0%{opacity:.9;transform:scale(.4)}100%{opacity:0;transform:scale(3)}}
+@keyframes ecospk{0%{opacity:1;transform:translate(0,0) scale(.3)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.1)}}
+@keyframes ecoring{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(5)}}@keyframes ecofly{0%{opacity:1;transform:translate(0,0)}100%{opacity:0;transform:translate(var(--dx),-90px)}}
+@keyframes ecobounce{50%{transform:translateY(-3px) scale(1.15)}}@keyframes ecoaura{50%{opacity:.6;transform:scale(1.12)}}
+@keyframes ecosun{50%{transform:scale(1.12)}}@keyframes ecocloud{to{transform:translateX(50px)}}
+@keyframes ecobar{from{width:var(--f)}to{width:var(--t)}}@keyframes ecolvl{0%{transform:scale(.8);color:#4e966b}50%{transform:scale(1.12)}100%{transform:scale(1)}}
+@keyframes ecobump{0%{transform:scale(2.2);color:#4e966b}100%{transform:scale(1)}}@keyframes ecopulse{50%{transform:scale(1.06);box-shadow:0 0 0 6px #b6f36b55}}
+@media(prefers-reduced-motion:reduce){.eco-scene *,.pop,.eco-banner{animation-duration:.01ms!important}}
